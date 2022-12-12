@@ -86,7 +86,7 @@ document.getElementById('form').addEventListener('submit', (e) => {
   document.getElementById('author').value = '';
 });
 
-function clock() {
+const clock= () => {
   const now = DateTime.now().toFormat('LLL dd yyyy, TT');
   const date2 = document.getElementById('date');
   date2.textContent = now.toLocaleString(DateTime.DATETIME_MED);
